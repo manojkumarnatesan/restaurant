@@ -1,0 +1,105 @@
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    border: 0;
+    height: 50px;
+    width: 100%;
+}
+p{
+    font-size: 50px;
+    font-family: papyrus;
+    background: linear-gradient(4deg, rgb(254, 1, 1), rgb(226, 14, 162) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    text-align: center;
+    position: relative;
+    top:10px;
+    text-shadow: 0 -1px 0 #f06,
+                    0 2px 0 rgb(255, 0, 0),
+                    -2px -2px 15px #f06,
+                    2px -2px 15px rgb(237, 14, 203),
+                    -2px 2px 15px #f06,
+                    2px 2px 15px #f06;
+}
+.icon{
+    
+    background: linear-gradient(4deg, rgb(211, 16, 16), rgb(226, 14, 162) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+    font-size: 50px;
+    cursor: pointer;  
+    animation-name: blink;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+}
+@keyframes blink{
+    from{
+        text-shadow: 0 -1px 0 #f06,
+                    0 2px 0 rgb(255, 0, 0),
+                    -2px -2px 15px #f06,
+                    2px -2px 15px rgb(237, 14, 203),
+                    -2px 2px 15px #f06,
+                    2px 2px 15px #f06;
+    }
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap:20px;
+    grid-row-gap:30px;
+}
+.item img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+    font-family: papyrus;
+    color: aliceblue;
+}
+.item button{
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: linear-gradient(rgb(232, 18, 225), rgb(255, 1, 1));
+    font-family: Papyrus;
+    color: #000;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 0 auto;
+    display: block;
+    transition: 0.2s all;
+}
+.item button:hover{
+    background: greenyellow;
+    font-family: Papyrus;
+    transform: scale(1.04);
+    border-radius: 20px;
+}
+@media  screen and(max-width: 1000px) {
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+@media  screen and(max-width: 768) {
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}

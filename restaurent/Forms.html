@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <h1>Checkout</h1>
+        <link rel="stylesheet" href="formstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="icon">
+            <a href="Home.html" ><i class="fa fa-cutlery" style="color: #4178e6;"></i></a>
+          </div>
+        <div class="container-box">
+            <h4>Delivery Adderss</h4>
+            <form action="#" method="post">
+                <p>Full Name:</p>
+                <input type="text" name="firstname" placeholder="Your name..">
+                <p>Last Name:</p>
+                <input type="text" name="lastname" placeholder="Your last name..">
+                <p>Mobile Number:</p>
+                <input type="text" name="number" placeholder="Mobile Number">
+                <p>Email:</p>
+                <input type="Email" name="email" placeholder="email">
+                <p>Address</p>
+                <input type="text" name="Adderss" placeholder="Complete address">
+                <p>Pincode</p>
+                <input type="text" name="pincode" placeholder="Pincode">
+            </form>
+        </div>
+        
+        <div class="container2">
+            <h4>Payment Method</h4>
+            <form action="order.html">
+                <input type="radio" id="card" name="payment">
+                <label for="card">Debit or Credit</label><br>
+                <input type="radio" id="bank" name="payment">
+                <label for="bank">Net Banking</label><br>
+                <input type="radio" id="upi" name="payment">
+                <label for="upi">Other upi apps</label><br>
+                <input type="radio" id="pay" name="payment">
+                <label for="pay">COD</label><br>
+                <pre>
+                
+                <a href="order.html"><button>Place Order</button></a>
+                </pre>
+            </form>
+        </div>
+    </body>
+</html>
